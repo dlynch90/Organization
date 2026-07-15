@@ -1,0 +1,18 @@
+{
+  "name": "Organization Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/universal:2",
+  "workspaceFolder": "${localWorkspaceFolder}",
+  "features": {},
+  "forwardPorts": [],
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": ["ms-python.python", "ms-azuretools.vscode-docker"]
+    }
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "python -m pip install --upgrade pip uv && uv venv .venv && source .venv/bin/activate && uv sync",
+  "prohibitedDependencies": [],
+  "postStartCommand": "echo 'Dev container started'",
+  "testCommand": "echo 'Tests would run here'"
+}
