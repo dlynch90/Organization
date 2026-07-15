@@ -1,0 +1,14 @@
+[project]
+name = "organization-monorepo"
+version = "0.1.0"
+description = "Monorepo for Organization project"
+requires-python = ">=3.12"
+
+[tool.uv]
+workspace = { members = ["packages/sample-module"] }
+
+[tool.ruff]
+line-length = 100
+
+[tool.black]
+line-length = 100
