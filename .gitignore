@@ -26,8 +26,12 @@ build/
 .devcontainer/
 
 # Monorepo generated
-packages/*
-!packages/**/.gitkeep
+# Track Python packages but ignore build artifacts
+packages/**/*.pyc
+packages/**/__pycache__/
+packages/**/.venv/
+packages/**/dist/
+packages/**/build/
 
 # Config
 *.env

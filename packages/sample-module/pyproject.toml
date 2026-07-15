@@ -1,0 +1,16 @@
+[project]
+name = "sample-module"
+version = "0.1.0"
+description = "Sample module for testing monorepo structure"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ty]
+strict = true
