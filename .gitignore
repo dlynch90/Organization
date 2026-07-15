@@ -32,6 +32,8 @@ packages/**/__pycache__/
 packages/**/.venv/
 packages/**/dist/
 packages/**/build/
+packages/**/.pytest_cache/
+packages/**/.ruff_cache/
 
 # Config
 *.env
